@@ -1,0 +1,9 @@
+﻿<table border="0">
+    <tr><th>ID</th><th>Name</th></tr>
+    <tr data-ng-repeat="g in Genres">
+        <td data-ng-bind="g.GenreId"></td>
+        <td><input type="text" data-ng-model="g.Name" /></td>
+        <td><input type="button" data-ng-click="UpdateGenre(g)" value="Update" /></td>
+        <td><input type="button" data-ng-click="DeleteGenre(g.GenreId)" value="Delete" /></td>
+    </tr>
+</table>
